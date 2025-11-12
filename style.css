@@ -1,0 +1,254 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(18, 18, 18, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #fca311;
+}
+
+/* Sign-in button */
+.sign-in {
+  background: #fca311;
+  color: #121212;
+  padding: 0.5rem 1.2rem;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.sign-in:hover {
+  background: #ffb53f;
+  transform: scale(1.05);
+}
+
+/* Mobile Menu */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #1a1a1a;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Hero section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1f1f1f, #0d0d0d);
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: #fca311;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.5rem;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.btn-light {
+  background: #fca311;
+  color: #121212;
+}
+
+.btn-dark {
+  background: #1f1f1f;
+  border: 1px solid #fca311;
+  color: #fca311;
+}
+
+.btn-light:hover, .btn-dark:hover {
+  transform: scale(1.05);
+}
+
+/* Feature sections */
+.feature {
+  padding: 6rem 1rem;
+  background: #181818;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.feature:nth-child(even) {
+  background: #202020;
+}
+
+.feature-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.feature-container.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(252, 163, 17, 0.2);
+}
+
+.feature-text {
+  max-width: 500px;
+}
+
+.feature-text h2 {
+  font-size: 2rem;
+  color: #fca311;
+  margin-bottom: 1rem;
+}
+
+.feature-text p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  background: linear-gradient(180deg, #fca311 0%, #ff8800 100%);
+  color: #121212;
+  padding: 6rem 1rem;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+
+.cta .btn-dark {
+  background: #121212;
+  color: #fca311;
+  border: none;
+}
+
+.cta .btn-dark:hover {
+  transform: scale(1.05);
+  background: #1f1f1f;
+}
+
+/* Footer */
+.footer {
+  background: #0b0b0b;
+  color: #aaa;
+  text-align: center;
+  padding: 3rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo {
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .feature-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .feature-text h2 {
+    font-size: 1.8rem;
+  }
+}
