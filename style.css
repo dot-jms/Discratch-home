@@ -141,7 +141,14 @@ body {
   justify-content: center;
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(135deg, #18191b 0%, #242529 30%, #FFA000 70%, #FF8F00 100%);
+ background: linear-gradient(135deg, 
+  #1a1a1d 0%,      /* top-left corner grey */
+  #18191b 20%,     /* smooth fade */
+  #FFA000 50%,     /* middle orange */
+  #FF8F00 80%,     /* darker orange */
+  #1a1a1d 100%     /* bottom-right corner grey */
+);
+
   position: relative;
   overflow: hidden;
 }
