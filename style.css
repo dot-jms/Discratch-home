@@ -142,7 +142,7 @@ body {
   justify-content: center;
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(135deg, #4a4d52 0%, #5e6268 30%, #FFA000 70%, #FF8F00 100%);
+  background: linear-gradient(135deg, ##18191b 0%, ##242529 30%, #FFA000 70%, #FF8F00 100%);
   position: relative;
   overflow: hidden;
 }
@@ -326,7 +326,7 @@ body {
 /* CTA Section - Vibrant gradient */
 .cta {
   text-align: center;
-  background: linear-gradient(135deg, #FF6F00 0%, #FFA000 50%, #FFB300 100%);
+  background: linear-gradient(135deg, ##18191b 0%, ##242529 30%, #FFA000 70%, #FF8F00 100%);
   color: #fff;
   padding: 7rem 2rem;
   position: relative;
