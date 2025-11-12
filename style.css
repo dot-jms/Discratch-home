@@ -141,17 +141,16 @@ body {
   justify-content: center;
   text-align: center;
   padding: 2rem;
- background: linear-gradient(135deg, 
-  #1a1a1d 0%,      /* top-left corner grey */
-  #18191b 20%,     /* smooth fade */
-  #FFA000 50%,     /* middle orange */
-  #FF8F00 80%,     /* darker orange */
-  #1a1a1d 100%     /* bottom-right corner grey */
-);
-
+  background: linear-gradient(135deg, 
+    #1a1a1d 0%,    /* top-left grey start */
+    #FFA000 40%,   /* middle orange start */
+    #FF8F00 60%,   /* middle orange end */
+    #1a1a1d 100%   /* bottom-right grey end */
+  );
   position: relative;
   overflow: hidden;
 }
+
 
 .hero::before {
   content: '';
