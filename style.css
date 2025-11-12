@@ -134,7 +134,6 @@ body {
   }
 }
 
-/* Hero section - Improved gradient */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -142,7 +141,7 @@ body {
   justify-content: center;
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(135deg, #18191b 0%, #242529 40%, #333237 70%, #FFA000 95%);
+  background: radial-gradient(circle at top left, #333237 0%, #FFA000 60%, #FF8F00 100%);
   position: relative;
   overflow: hidden;
 }
