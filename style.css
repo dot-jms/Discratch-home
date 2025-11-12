@@ -141,7 +141,7 @@ body {
   justify-content: center;
   text-align: center;
   padding: 2rem;
-  background: radial-gradient(circle at top left, #333237 10%, #FFA000 50%, #FF8F00 100%);
+  background: radial-gradient(circle at top left, #1f1f22 20%, #FFA000 60%, #FF8F00 100%);
   position: relative;
   overflow: hidden;
 }
